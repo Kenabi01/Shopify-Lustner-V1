@@ -8,5 +8,12 @@
 </head>
 <body>
   {{ content_for_layout }}
+  <nav class="bottom-nav">
+    <button id="btn-products">Produkte</button>
+    <button id="btn-config">Konfigurator</button>
+    <button id="btn-cart">Warenkorb</button>
+    <button id="btn-more">Mehr</button>
+  </nav>
+  <script src="{{ 'bottom-nav.js' | asset_url }}" defer></script>
 </body>
 </html>

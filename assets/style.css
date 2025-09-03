@@ -4,3 +4,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.bottom-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+#sectionsWrapper {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.section {
+  flex: 0 0 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
