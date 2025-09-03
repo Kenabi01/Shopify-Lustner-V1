@@ -1,7 +1,7 @@
 {
   "name": "shopify-lustner-v1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Shopify theme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests specified\" && exit 0"
