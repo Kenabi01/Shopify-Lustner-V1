@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page_title }}</title>
+  {{ content_for_header }}
+  <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+</head>
+<body>
+  {{ content_for_layout }}
+
+  <div class="bottom-nav">
+    <button data-index="0">Produkte</button>
+    <button data-index="1">Konfigurator</button>
+    <button data-index="2">Warenkorb</button>
+    <button data-index="3">Mehr</button>
+  </div>
+
+  <script src="{{ 'app.js' | asset_url }}"></script>
+</body>
+</html>
