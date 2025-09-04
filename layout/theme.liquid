@@ -6,16 +6,24 @@
   <title>{{ page_title }}</title>
   {{ content_for_header }}
   <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+  <style>
+    :root {
+      --bottom-nav-gap: {{ settings.bottom_nav_gap | default: 16 }}px;
+      --bottom-nav-padding: {{ settings.bottom_nav_padding | default: 8 }}px;
+      --bottom-nav-max-width: {{ settings.bottom_nav_max_width | default: 500 }}px;
+    }
+  </style>
 </head>
 <body>
   {{ content_for_layout }}
-  <p>hi</p>
-  <nav class="bottom-nav">
-    <button id="btn-products">Produkte</button>
-    <button id="btn-config">Konfigurator</button>
-    <button id="btn-cart">Warenkorb</button>
-    <button id="btn-more">Mehr</button>
-  </nav>
+  <div class="bottom-nav-container">
+    <nav class="bottom-nav">
+      <button id="btn-products">Produkte</button>
+      <button id="btn-config">Konfigurator</button>
+      <button id="btn-cart">Warenkorb</button>
+      <button id="btn-more">Mehr</button>
+    </nav>
+  </div>
   <script src="{{ 'bottom-nav.js' | asset_url }}" defer></script>
 </body>
 </html>

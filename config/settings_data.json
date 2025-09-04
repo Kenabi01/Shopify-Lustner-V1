@@ -1,6 +1,10 @@
 {
   "current": "Default",
   "presets": {
-    "Default": {}
+    "Default": {
+      "bottom_nav_gap": 16,
+      "bottom_nav_padding": 8,
+      "bottom_nav_max_width": 500
+    }
   }
 }

@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "name": "Bottom navigation",
+    "settings": [
+      {
+        "type": "range",
+        "id": "bottom_nav_gap",
+        "label": "Button spacing",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "bottom_nav_padding",
+        "label": "Box padding",
+        "min": 0,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "bottom_nav_max_width",
+        "label": "Max box width",
+        "min": 200,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 500
+      }
+    ]
+  }
+]
