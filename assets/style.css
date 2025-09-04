@@ -15,7 +15,7 @@ body {
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: var(--bottom-nav-max-width, 500px);
   box-sizing: border-box;
 }
@@ -32,6 +32,7 @@ body {
     left: 0;
     right: 0;
     transform: none;
+    width: 100%;
     border-radius: 0;
   }
 }
