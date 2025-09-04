@@ -15,15 +15,15 @@ body {
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  display: inline-block;
-  box-sizing: border-box;
+  width: 100%;
   max-width: var(--bottom-nav-max-width, 500px);
+  box-sizing: border-box;
 }
 
 .bottom-nav {
-  display: inline-flex;
-  gap: var(--bottom-nav-gap, 1rem);
+  display: flex;
   justify-content: center;
+  gap: var(--bottom-nav-gap, 1rem);
 }
 
 @media (max-width: 768px) {
@@ -32,15 +32,7 @@ body {
     left: 0;
     right: 0;
     transform: none;
-    width: 100%;
     border-radius: 0;
-    display: block;
-  }
-
-  .bottom-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
   }
 }
 
