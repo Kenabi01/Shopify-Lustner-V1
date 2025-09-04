@@ -15,8 +15,8 @@ body {
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  width: calc(100% - 40px);
-  max-width: var(--bottom-nav-max-width, 500px);
+  /* Responsive width that never exceeds the configurable max value */
+  width: min(calc(100% - 40px), var(--bottom-nav-max-width, 500px));
 }
 
 .bottom-nav {
